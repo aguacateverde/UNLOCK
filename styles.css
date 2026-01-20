@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  touch-action: manipulation;
+}
+
+#app {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.lock-icon {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  margin: 8px;
+  border-radius: 50%;
+  background: #444;
+}
+
+.dot.filled {
+  background: #fff;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px;
+}
+
+.key {
+  background: #111;
+  border-radius: 50%;
+  padding: 22px;
+  font-size: 22px;
+  user-select: none;
+}
+
+.key:active {
+  background: #333;
+}
+
+.empty {
+  visibility: hidden;
+}
+
+/* ZONA SECRETA */
+#secret-zone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
